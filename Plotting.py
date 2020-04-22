@@ -45,6 +45,7 @@ merged = pandas.merge(merged, new_df3, on='Date', how='inner', left_index=True, 
 plt.plot(merged['Date'], merged['Tesla Close'])
 plt.plot(merged['Date'], merged['Volkswagen Close'])
 plt.plot(merged['Date'], merged['BMW Close'])
+plt.legend(["Tesla", "Volkswagen", "BMW"], loc="upper left")
 
 plt.show()
 
